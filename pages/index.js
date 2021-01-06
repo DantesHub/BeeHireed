@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import  Link from 'next/Link'
+import  Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 let client = require('contentful').createClient({
@@ -15,7 +15,7 @@ export async function getStaticProps() {
     props: {
       articles: data.items
     },
-    revalidate: 60
+    revalidate: 30
   }
 }
 
