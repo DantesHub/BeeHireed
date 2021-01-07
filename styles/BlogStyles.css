@@ -1,0 +1,23 @@
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+h1 a {
+  text-decoration: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+}
+p {
+  line-height: 2.25rem;
+  font-size: 1.25rem;
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+}
+article {
+  margin: 2rem 0;
+}
+
+/* .container {
+  min-width: 750px;
+} */
