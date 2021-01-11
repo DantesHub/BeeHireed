@@ -1,10 +1,9 @@
-import React from "react"
-import Link from "next/link"
-import Container from 'react-bootstrap/Container'
-
+import React from "react";
+import Link from "next/link";
+import { Container } from "react-bootstrap";
 export default function PostList({ posts = [] }) {
   return (
-    <Container>
+    <div>
       {posts.map((post) => (
         <article key={post.sys.id}>
           <header>
@@ -25,6 +24,6 @@ export default function PostList({ posts = [] }) {
           </p>
         </article>
       ))}
-    </Container>
-  )
+    </div>
+  );
 }
