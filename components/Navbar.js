@@ -39,7 +39,7 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link href='#Features' data-uk-scroll>
+                  <Link href='/' data-uk-scroll>
                     <a className='text-large uk-visible@l'>
                       <span className='text-gray-dark nav-link'>Features</span>
                     </a>
