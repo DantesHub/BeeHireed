@@ -1,12 +1,11 @@
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
 import Image from "next/image";
-import { Container } from "react-bootstrap";
-
 let client = require("contentful").createClient({
-  space: process.env.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  space: process.env.NEXT_CONTENTFUL_SPACE_ID,
+  accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
 });
+
 export async function getStaticPaths() {
   let data = await client.getEntries({
     content_type: "post",
@@ -32,13 +31,11 @@ export async function getStaticProps({ params }) {
     revalidate: 30,
   };
 }
-export default function Article({ post }) {
+export default function post({ post }) {
   if (!post) return <div>404</div>;
   return (
-    <Container className='margin-top-100'>
-      <h1 className='theme-yellow text-weight-800 page-title-extra-large padding-bottom-5px'>
-        {post.fields.title}
-      </h1>
+    <div>
+      <h1>{post.fields.title}</h1>
       <div>
         {documentToReactComponents(post.fields.content, {
           renderNode: {
@@ -52,6 +49,6 @@ export default function Article({ post }) {
           },
         })}
       </div>
-    </Container>
+    </div>
   );
 }
