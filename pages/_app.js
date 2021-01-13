@@ -20,6 +20,9 @@ function MyApp({ Component, pageProps }) {
   library.add(fab);
   return (
     <div>
+      <Head>
+        <script src='https://f.convertkit.com/ckjs/ck.5.js'></script>
+      </Head>
       <Navbar />
       <Component {...pageProps} />
     </div>

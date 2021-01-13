@@ -26,7 +26,7 @@ const landing = () => {
 
           <li class='uk-transition-toggle uk-animation-toggle overflow-hidden'>
             <div class='uk-position-cover'>
-              <div class='uk-position-center text-left'>
+              <div class='uk-position-center  text-left'>
                 <div class='width-70 margin-auto'>
                   <h2 class='text-weight-700 text-gray-dark bee-title'>
                     Stay connected with your friends with softop.
@@ -51,6 +51,7 @@ const landing = () => {
                       required='required'
                       data-error='Lastname is required.'
                     />
+
                   </div>
 
                   <a
@@ -153,7 +154,7 @@ const landing = () => {
             <div class='col-md-4 col-sm-12 col-xs-12 center-col text-left margin-auto md-text-center'>
               <div class='sm-container-spread md-text-center'>
                 <div class='width-100 margin-left-auto sm-width-100'>
-                  <img
+                  <Image
                     src='/images/backgrounds/bg-02.png'
                     alt=''
                     width='350'
