@@ -32,10 +32,10 @@ export default function PostList({ posts = [] }) {
               />
               <p className='text-weight-600 margin-none'>
                 Published:{" "}
-                <Moment
+                {/* <Moment
                   format='MMM DD, YYYY'
                   date={Date(post.fields.date).toString()}
-                />{" "}
+                />{" "} */}
                 |{" "}
                 <FontAwesomeIcon
                   icon={faClock}
