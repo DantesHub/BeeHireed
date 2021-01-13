@@ -23,9 +23,9 @@ export default function Navbar() {
             <div className='uk-navbar-right '>
               <ul className='uk-navbar-nav text-weight-600'>
                 <li>
-                  <div class='uk-navbar-left uk-hidden@l'>
+                  <div className='uk-navbar-left uk-hidden@l'>
                     <a
-                      class='uk-navbar-toggle'
+                      className='uk-navbar-toggle'
                       data-uk-navbar-toggle-icon
                       data-uk-toggle='target: #offcanvas-nav'
                     ></a>
