@@ -3,23 +3,23 @@ import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 let client = require("contentful").createClient({
-  space: process.env.NEXT_CONTENTFUL_SPACE_ID,
-  accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
+  space: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 });
 
 export async function getStaticProps() {
   let data = await client.getEntries({
-    content_type: "article",
+    content_type: "post",
   });
   return {
     props: {
-      articles: data.items,
+      posts: data.items,
     },
     revalidate: 30,
   };
 }
 
-export default function Home({ articles }) {
+export default function Home({ posts }) {
   console.log(articles);
   return (
     <div>
@@ -30,10 +30,10 @@ export default function Home({ articles }) {
 
       <main>
         <ul>
-          {articles.map((article) => (
-            <li key={article.sys.id}>
-              <Link href={"/articles/" + article.fields.slug}>
-                <a>{article.fields.title}</a>
+          {posts.map((post) => (
+            <li key={post.sys.id}>
+              <Link href={"/articles/" + post.fields.slug}>
+                <a>{post.fields.title}</a>
               </Link>
             </li>
           ))}
