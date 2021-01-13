@@ -13,35 +13,33 @@ export default function Navbar() {
             data-uk-navbar='boundary-align: true; align: center;'
           >
             <div className='uk-navbar-left padding-left-four-percent'>
-              <a
-                className='uk-navbar-item uk-logo text-gray-dark text-weight-700 heebo'
-                href='#'
-                data-uk-scroll
-              >
-                Beehired.
-              </a>
+              <Link href='/'>
+                <a className='uk-navbar-item uk-logo text-gray-dark text-weight-700 heebo'>
+                  Beehired.
+                </a>
+              </Link>
             </div>
 
             <div className='uk-navbar-right '>
               <ul className='uk-navbar-nav text-weight-600'>
                 <li>
-                  <div className='uk-navbar-left uk-hidden@l '>
+                  <div class='uk-navbar-left uk-hidden@l'>
                     <a
-                      className='uk-navbar-toggle '
+                      class='uk-navbar-toggle'
                       data-uk-navbar-toggle-icon
                       data-uk-toggle='target: #offcanvas-nav'
                     ></a>
                   </div>
                 </li>
                 <li>
-                  <Link className='' href='/landing' data-uk-scroll>
+                  <Link className='' href='/' data-uk-scroll>
                     <a className='text-large uk-visible@l'>
                       <span className='text-gray-dark nav-link'>Home</span>
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href='#features' data-uk-scroll>
+                  <Link href='#Features' data-uk-scroll>
                     <a className='text-large uk-visible@l'>
                       <span className='text-gray-dark nav-link'>Features</span>
                     </a>
@@ -49,7 +47,7 @@ export default function Navbar() {
                 </li>
 
                 <li>
-                  <Link href='#' data-uk-scroll>
+                  <Link href='/blog' data-uk-scroll>
                     <a className='text-large uk-visible@l'>
                       <span className='text-gray-dark nav-link'>Blog</span>
                     </a>
@@ -57,7 +55,7 @@ export default function Navbar() {
                 </li>
 
                 <li>
-                  <Link href='#contact' data-uk-scroll>
+                  <Link href='/' data-uk-scroll>
                     <a className='text-large uk-visible@l'>
                       <span className='text-gray-dark nav-link'>Contact</span>
                     </a>
@@ -88,7 +86,7 @@ export default function Navbar() {
       </div>
       <div
         id='offcanvas-nav'
-        data-uk-offcanvas='mode: push; flip: false; overlay: true; esc-close: true;'
+        data-uk-offcanvas='mode: push; flip: true; overlay: true; esc-close: true;'
       >
         <div className='uk-offcanvas-bar menu-dark bg-white uk-flex uk-flex-middle'>
           <div>
@@ -102,33 +100,33 @@ export default function Navbar() {
                   href='#'
                   data-uk-scroll
                 >
-                  <span className='text-gray-dark'>Beehired.</span>
+                  <span className='text-gray-dark page-title-medium'>
+                    Beehired.
+                  </span>
                 </a>
               </li>
               <li className='uk-parent margin-bottom-10px'>
-                <a href='#' className='bottom-border' data-uk-scroll>
-                  <p className='text-medium text-gray-dark text-weight-400  padding-top-25px heebo'>
+                <Link href='/'>
+                  <p className='text-medium text-gray-dark text-weight-500  padding-top-25px heebo text-extra-large'>
                     Home
                   </p>
-                </a>
+                </Link>
               </li>
-              <li className='uk-parent margin-bottom-10px'>
-                <a href='#features' className='bottom-border' data-uk-scroll>
-                  <p className='text-medium text-gray-dark text-weight-400 padding-top-25px heebo'>
-                    Features
-                  </p>
-                </a>
+              <li className='uk-parent margin-bottom-10px bottom-border'>
+                <p className='text-medium text-gray-dark text-weight-500 padding-top-25px heebo text-extra-large'>
+                  Features
+                </p>
               </li>
-              <li className='uk-parent margin-bottom-10px'>
-                <a href='#' className='bottom-border '>
-                  <p className='text-medium text-gray-dark text-weight-400 padding-top-25px heebo'>
+              <li className='uk-parent margin-bottom-10px bottom-border'>
+                <Link href='/blog'>
+                  <p className='text-medium text-gray-dark text-weight-500 padding-top-25px heebo nav-side text-extra-large'>
                     Blog
                   </p>
-                </a>
+                </Link>
               </li>
             </ul>
             <div className='nav-footer margin-top-50px padding-top-25px'>
-              <p className='no-margin-bottom margin-top-20px text-small text-gray-dark text-weight-400'>
+              <p className='no-margin-bottom margin-top-20px text-small text-gray-dark text-weight-400 '>
                 Copyright © 2020 of Beehired. All rights reserved.
               </p>
               <p className='no-margin-bottom text-small text-gray-dark text-weight-400 text-black'></p>

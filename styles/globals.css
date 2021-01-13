@@ -6,13 +6,9 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-/* a:visited {
-  color: blue;
-} */
 * {
   box-sizing: border-box;
 }
 .padding-top-5px {
   padding-top: 5px;
 }
-
