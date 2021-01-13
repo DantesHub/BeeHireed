@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
 import PostList from "../components/postlist";
-import { useEffect } from "react";
 
 let client = require("contentful").createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
