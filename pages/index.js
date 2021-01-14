@@ -1,8 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
+import ConvertKitForm from "convertkit-react";
 
 const landing = () => {
+  const config = {
+    formId: 1953517,
+    template: "clare",
+    hideName: true,
+    emailPlaceholder: "Enter an email address",
+    submitText: "Sign up",
+  };
   return (
     <React.Fragment>
       <div
@@ -13,12 +21,13 @@ const landing = () => {
           className='uk-slider-items uk-child-width-1-2@m uk-grid uk-grid-small'
           data-uk-height-viewport
         >
-          <li className='uk-transition-toggle uk-animation-toggle overflow-hidden sm-hidden'>
+          <li className='uk-transition-toggle uk-animation-toggle '>
             <div className='uk-position-center'>
-              <div className='width-100 margin-left-auto sm-width-100'>
+              <div className='width-100 margin-left-auto sm-width-100 padding-left-minus-4'>
                 <img
                   src='images/backgrounds/bg-01.png'
                   alt='job application automation'
+                  className='landing-image'
                 />
               </div>
             </div>
@@ -37,28 +46,13 @@ const landing = () => {
                   </p>
 
                   <img
-                    className='margin-bottom-25px'
+                    className='margin-bottom-25px '
                     src='images/separator.png'
                     alt=''
                   />
-
-                  <div className='form-group'>
-                    <input
-                      className='form-control form_lastname bg-transparent no-border-top no-border-left no-border-right border-color-gray-extra-light border-3px padding-10px text-gray-dark text-weight-400 width-70 sm-width-100'
-                      type='text'
-                      name='name'
-                      placeholder='Email'
-                      required='required'
-                      data-error='Lastname is required.'
-                    />
+                  <div className=''>
+                    <ConvertKitForm {...config} />
                   </div>
-
-                  <a
-                    className='btn btn-large btn-gold sm-display-table no-margin-bottom'
-                    href='#'
-                  >
-                    Subscribe
-                  </a>
                 </div>
               </div>
             </div>

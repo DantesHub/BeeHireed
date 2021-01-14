@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "bootstrap": "^4.5.3",
     "contentful": "^8.1.7",
+    "convertkit-react": "^1.4.2",
     "date-fns": "2.14.0",
     "moment": "^2.29.1",
     "next": "10.0.4",

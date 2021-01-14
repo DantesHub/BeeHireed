@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 export default function Navbar() {
   return (
     <div>
@@ -13,8 +14,9 @@ export default function Navbar() {
             data-uk-navbar='boundary-align: true; align: center;'
           >
             <div className='uk-navbar-left padding-left-four-percent'>
+              <Image src='/images/beeLogo.png' width='40' height='40' />
               <Link href='/'>
-                <a className='uk-navbar-item uk-logo text-gray-dark text-weight-700 heebo'>
+                <a className='text-black text-weight-700 heebo padding-left-minus-4 page-title-medium'>
                   Beehired.
                 </a>
               </Link>
@@ -34,14 +36,14 @@ export default function Navbar() {
                 <li>
                   <Link className='' href='/' data-uk-scroll>
                     <a className='text-large uk-visible@l'>
-                      <span className='text-gray-dark nav-link'>Home</span>
+                      <div className='text-gray-dark nav-link'>Home</div>
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href='/' data-uk-scroll>
                     <a className='text-large uk-visible@l'>
-                      <span className='text-gray-dark nav-link'>Features</span>
+                      <div className='text-gray-dark nav-link'>Features</div>
                     </a>
                   </Link>
                 </li>
@@ -49,7 +51,7 @@ export default function Navbar() {
                 <li>
                   <Link href='/blog' data-uk-scroll>
                     <a className='text-large uk-visible@l'>
-                      <span className='text-gray-dark nav-link'>Blog</span>
+                      <div className='text-gray-dark nav-link'>Blog</div>
                     </a>
                   </Link>
                 </li>
@@ -57,7 +59,7 @@ export default function Navbar() {
                 <li>
                   <Link href='/' data-uk-scroll>
                     <a className='text-large uk-visible@l'>
-                      <span className='text-gray-dark nav-link'>Contact</span>
+                      <div className='text-gray-dark nav-link'>Contact</div>
                     </a>
                   </Link>
                 </li>
@@ -100,9 +102,9 @@ export default function Navbar() {
                   href='#'
                   data-uk-scroll
                 >
-                  <span className='text-gray-dark page-title-medium'>
+                  <div className='text-gray-dark page-title-medium'>
                     Beehired.
-                  </span>
+                  </div>
                 </a>
               </li>
               <li className='uk-parent margin-bottom-10px'>

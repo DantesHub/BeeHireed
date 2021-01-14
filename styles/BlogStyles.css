@@ -14,7 +14,16 @@ p {
   font-weight: 300;
 }
 .bee-title {
-  font-size: 3.2rem;
+  font-size: 3rem;
+}
+.landing-image {
+  margin-left: 50px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="bee-title"] {
+    font-size: 2.3rem;
+  }
 }
 article {
   margin: 2rem 0;
@@ -2450,9 +2459,10 @@ hr.ridge {
 }
 
 .page-title-medium {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 37px;
 }
+
 .page-title-large {
   font-size: 42px;
   line-height: 45px;
@@ -6654,6 +6664,9 @@ blockquote p {
 /* Padding Right
 -------------------------*/
 
+.padding-left-minus-4 {
+  padding-left: -4px;
+}
 .padding-right-one-percent {
   padding-right: 1%;
 }
@@ -8492,8 +8505,18 @@ hr.small {
   border-radius: 3px;
   padding: 0px;
 }
-
+.formkit-powered-by {
+  display: none !important;
+  color: white !important;
+}
 .nav-side:focus {
   cursor: pointer;
   background-color: red;
+}
+span {
+  background-color: #ffd900 !important;
+  font-weight: 500;
+  font-size: 1.4rem;
+  width: 16rem;
+  color: black;
 }
