@@ -7,7 +7,6 @@ import Navbar from "../components/Navbar";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
-import { css } from "@emotion/core";
 import LoadingOverlay from "react-loading-overlay";
 const override = css`
   display: block;
