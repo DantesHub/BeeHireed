@@ -9,8 +9,6 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
 import { css } from "@emotion/core";
 import LoadingOverlay from "react-loading-overlay";
-
-import { ClipLoader, BounceLoader } from "react-spinners";
 const override = css`
   display: block;
   margin: 0 auto;
