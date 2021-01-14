@@ -31,7 +31,7 @@ export default function Home({ posts }) {
         <ul>
           {posts.map((post) => (
             <li key={post.sys.id}>
-              <Link href={"/articles/" + post.fields.slug}>
+              <Link href={"/blog/" + post.fields.slug}>
                 <a>{post.fields.title}</a>
               </Link>
             </li>
