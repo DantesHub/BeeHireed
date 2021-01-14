@@ -8,19 +8,6 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
 import LoadingOverlay from "react-loading-overlay";
-const override = css`
-  display: block;
-  margin: 0 auto;
-  border-color: #ffd900;
-  left: 50%;
-  top: 40%;
-  position: absolute;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-`;
 
 function MyApp({ Component, pageProps }) {
   let [loading, setLoading] = useState(true);
