@@ -23,7 +23,7 @@ const landing = () => {
         >
           <li className='uk-transition-toggle uk-animation-toggle '>
             <div className='uk-position-center'>
-              <div className='width-100 margin-left-auto sm-width-100 padding-left-minus-4'>
+              <div className='width-100 margin-left-auto sm-width-100'>
                 <img
                   src='images/backgrounds/bg-01.png'
                   alt='job application automation'
