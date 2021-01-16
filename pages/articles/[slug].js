@@ -36,7 +36,7 @@ export default function Article({ post }) {
   if (!post) return <div>404</div>;
   return (
     <Container className='margin-top-100'>
-      <h1 className='theme-yellow text-weight-800 page-title-extra-large padding-bottom-5px'>
+      <h1 className='theme-yellow text-weight-800 page-title-extra-large padding-bottom-5px text-center'>
         {post.fields.title}
       </h1>
       <div>

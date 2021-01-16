@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../styles/uikit.min.css";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
@@ -11,10 +12,9 @@ import LoadingOverlay from "react-loading-overlay";
 
 function MyApp({ Component, pageProps }) {
   let [loading, setLoading] = useState(true);
-  let [color, setColor] = useState("#ffffff");
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 100);
+    setTimeout(() => setLoading(false), 200);
     const script = document.createElement("script");
     script.src =
       "https://cdnjs.cloudflare.com/ajax/libs/uikit/3.6.8/js/uikit.min.js";
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
   }, []);
   library.add(fab);
   return (
-    <div className='sweet-loader'>
+    <div>
       <Navbar />
       <LoadingOverlay
         active={loading}
@@ -33,6 +33,7 @@ function MyApp({ Component, pageProps }) {
       >
         <Component {...pageProps} />
       </LoadingOverlay>{" "}
+      <Footer />
     </div>
   );
 }
