@@ -85,7 +85,7 @@ const landing = () => {
         id='features'
         className='padding-top-bottom-150px bg-gray-transparent'
       >
-        <div className='container container-spread'>
+        <div className='container-2'>
           <div className='row'>
             <div className='col-md-8 col-sm-12 col-xs-12 center-col text-center margin-auto'>
               <h2 className='text-weight-700 text-gray-dark'>

@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import "../styles/BlogStyles.css";
 import "bootstrap/dist/css/bootstrap.css";
-// import "../styles/uikit.min.css";
+import "../styles/uikit.min.css";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -24,12 +24,6 @@ function MyApp({ Component, pageProps }) {
   library.add(fab);
   return (
     <div>
-      <Head>
-        <link
-          rel='stylesheet'
-          href='https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/css/uikit.min.css'
-        />
-      </Head>
       <Navbar />
       <LoadingOverlay
         active={loading}
