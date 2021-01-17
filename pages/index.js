@@ -117,7 +117,7 @@ const landing = () => {
                     />
                   </span>
 
-                  <h6 className='text-gray-dark text-extra-large text-weight-700 margin-top-25px'>
+                  <h6 className='text-gray-dark text-extra-large text-weight-700 margin-none'>
                     Giveaways.
                   </h6>
 
@@ -142,7 +142,7 @@ const landing = () => {
                     />
                   </span>
 
-                  <h6 className='text-gray-dark text-extra-large text-weight-700 margin-top-25px'>
+                  <h6 className='text-gray-dark text-extra-large text-weight-700 margin-none'>
                     Global Stuff.
                   </h6>
 
@@ -166,7 +166,7 @@ const landing = () => {
                     />
                   </span>
 
-                  <h6 className='text-gray-dark text-extra-large text-weight-700 margin-top-25px'>
+                  <h6 className='text-gray-dark text-extra-large text-weight-700 margin-none'>
                     Databases.
                   </h6>
 
@@ -179,7 +179,7 @@ const landing = () => {
             </div>
             <div className='col-md-4 col-sm-12 col-xs-12 center-col text-left margin-auto md-text-center'>
               <div className='sm-container-spread md-text-center'>
-                <div className='width-150 margin-left-auto margin-top-100px'>
+                <div className='width-150 margin-left-auto margin-top-50px'>
                   <Image
                     src='/images/backgrounds/bg-02.png'
                     alt=''
@@ -204,7 +204,7 @@ const landing = () => {
                     />
                   </span>
 
-                  <h6 className='text-gray-dark text-extra-large text-weight-700 margin-top-25px'>
+                  <h6 className='text-gray-dark text-extra-large text-weight-700 margin-none'>
                     24/7 support.
                   </h6>
 
@@ -221,7 +221,7 @@ const landing = () => {
                     data-uk-icon='icon: pull; ratio: 1.5'
                   ></span>
 
-                  <h6 className='text-gray-dark text-extra-large text-weight-700 margin-top-25px'>
+                  <h6 className='text-gray-dark text-extra-large text-weight-700 margin-top-25px margin-none'>
                     Unlimited Downloads.
                   </h6>
 
@@ -245,7 +245,7 @@ const landing = () => {
                     />
                   </span>
 
-                  <h6 className='text-gray-dark text-extra-large text-weight-700 margin-top-25px'>
+                  <h6 className='text-gray-dark text-extra-large text-weight-700 margin-none'>
                     1 Month Trial.
                   </h6>
 
