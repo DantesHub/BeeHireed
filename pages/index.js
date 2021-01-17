@@ -26,10 +26,7 @@ const landing = () => {
       >
         {" "}
         testing 123 testing testing
-        <ul
-          className='uk-slider-items uk-child-width-1-2@m uk-grid uk-grid-small'
-          data-uk-height-viewport
-        >
+        <ul className='uk-flex uk-flex-column ' data-uk-height-viewport>
           <li className='uk-transition-toggle uk-animation-toggle '>
             <div className='uk-position-center'>
               <div className='width-100 margin-left-auto sm-width-100'>
