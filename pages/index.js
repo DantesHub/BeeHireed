@@ -44,7 +44,7 @@ const landing = () => {
             <div className='uk-position-cover'>
               <div className='uk-position-center  text-left'>
                 <div className='width-70 margin-auto'>
-                  <h2 className='text-weight-700 text-gray-dark bee-title'>
+                  <h2 className='text-weight-700 text-gray-dark bee-title margin-none'>
                     Land Your Dream Job Faster.
                   </h2>
                   <p className='text-gray-regular text-extra-large'>
@@ -83,7 +83,7 @@ const landing = () => {
       {/* Services */}
       <div
         id='features'
-        className='padding-top-bottom-150px bg-gray-transparent'
+        className='padding-top-bottom-100px bg-gray-transparent'
       >
         <div className='container-2'>
           <div className='row'>

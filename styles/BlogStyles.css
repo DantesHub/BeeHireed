@@ -9,12 +9,13 @@ h1 a {
 } */
 p {
   line-height: 2.25rem;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-family: "Heebo", sans-serif;
   font-weight: 300;
 }
 .bee-title {
   font-size: 2.5rem !important;
+  margin-bottom: 10px;
 }
 .landing-image {
   margin-left: 50px;
@@ -2502,7 +2503,7 @@ h1 {
 }
 
 h2 {
-  font-size: 60px !important;
+  font-size: 50px !important;
   line-height: 1.3;
 }
 
@@ -2550,8 +2551,8 @@ h6 {
 }
 
 .text-extra-large {
-  font-size: 25px !important;
-  line-height: 45px !important;
+  font-size: 20px !important;
+  line-height: 40px !important;
 }
 
 .title-extra-small {
