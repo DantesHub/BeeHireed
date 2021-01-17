@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Container, Button } from "react-bootstrap";
 export default function Layout({ children }) {
   return (
-    <div className='margin-top-100'>
+    <div className='padding-top-150px'>
       <Container>
         <main>{children}</main>
       </Container>
