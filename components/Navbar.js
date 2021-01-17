@@ -40,13 +40,6 @@ export default function Navbar() {
                     </a>
                   </Link>
                 </li>
-                <li>
-                  <Link href='/' data-uk-scroll>
-                    <a className='text-large uk-visible@l'>
-                      <div className='text-gray-dark nav-link'>Features</div>
-                    </a>
-                  </Link>
-                </li>
 
                 <li>
                   <Link href='/blog' data-uk-scroll>
@@ -57,7 +50,10 @@ export default function Navbar() {
                 </li>
 
                 <li>
-                  <Link href='/' data-uk-scroll>
+                  <Link
+                    href='mailto:support@beehired.io?subject=Subject&body=Body%20goes%20here'
+                    data-uk-scroll
+                  >
                     <a className='text-large uk-visible@l'>
                       <div className='text-gray-dark nav-link'>Contact</div>
                     </a>
@@ -114,11 +110,7 @@ export default function Navbar() {
                   </p>
                 </Link>
               </li>
-              <li className='uk-parent margin-bottom-10px bottom-border'>
-                <p className='text-medium text-gray-dark text-weight-500 padding-top-25px heebo text-extra-large'>
-                  Features
-                </p>
-              </li>
+
               <li className='uk-parent margin-bottom-10px bottom-border'>
                 <Link href='/blog'>
                   <p className='text-medium text-gray-dark text-weight-500 padding-top-25px heebo nav-side text-extra-large'>

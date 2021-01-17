@@ -47,27 +47,6 @@ const Footer = () => {
                 </p>
               </li>
               <li className='no-margin'>
-                <p className='text-gray-dark'>
-                  <a className='text-gray-dark' href='#'>
-                    Features
-                  </a>
-                </p>
-              </li>
-              <li className='no-margin'>
-                <p className='text-gray-dark'>
-                  <a className='text-gray-dark' href='#'>
-                    Pricing
-                  </a>
-                </p>
-              </li>
-              <li className='no-margin'>
-                <p className='text-gray-dark'>
-                  <a className='text-gray-dark' href='#'>
-                    Screenshots
-                  </a>
-                </p>
-              </li>
-              <li className='no-margin'>
                 <p className='text-gray-dark no-margin-bottom'>
                   <a className='text-gray-dark' href='#'>
                     Blog
@@ -81,7 +60,7 @@ const Footer = () => {
               Contact.
             </h6>
             <p className='position-relative bottom-1 margin-right-10px  text-extra-large'>
-              fdas
+              support@beehired.io
             </p>{" "}
           </div>
         </div>
