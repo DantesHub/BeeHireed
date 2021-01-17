@@ -24,6 +24,8 @@ const landing = () => {
         className='uk-position-relative uk-visible-toggle'
         data-uk-slider='finite: true'
       >
+        {" "}
+        testing 123 testing testing
         <ul
           className='uk-slider-items uk-child-width-1-2@m uk-grid uk-grid-small'
           data-uk-height-viewport
