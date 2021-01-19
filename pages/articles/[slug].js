@@ -46,7 +46,7 @@ export default function Article({ post }) {
               <Image
                 src={"https:" + node.data.target.fields.file.url}
                 width={node.data.target.fields.file.details.image.width}
-                height={node.data.target.fields.file.details.image.height}
+                height={node.data.target.fields.file.details.image.height}  
               />
             ),
           },
