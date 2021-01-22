@@ -8537,7 +8537,9 @@ span {
   width: 16rem;
   color: black;
 }
-
+.formkit-submit span {
+  min-width: 300px;
+}
 #sweet-loader {
   position: fixed !important;
   width: 100% !important;

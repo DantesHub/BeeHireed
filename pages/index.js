@@ -16,7 +16,7 @@ const landing = () => {
     template: "clare",
     hideName: true,
     emailPlaceholder: "Enter an email address",
-    submitText: "Sign up",
+    submitText: "Sign Up For The Beta",
   };
   return (
     <React.Fragment>
