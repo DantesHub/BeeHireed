@@ -19,6 +19,7 @@ p {
 }
 .landing-image {
   margin-left: 50px;
+  max-width: 90%;
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -2585,11 +2586,11 @@ h6 {
   text-align: center;
 }
 
-.text-left {
-  text-align: left !important;
+.text-lt {
+  text-align: left;
 }
 
-.text-right {
+.text-rt {
   text-align: right;
 }
 
@@ -8546,4 +8547,89 @@ span {
   bottom: 0 !important;
   /* background-color: black; */
   z-index: 999999 !important;
+}
+
+/* Create two equal columns that floats next to each other */
+.hired-column {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+
+/* Clear floats after the columns */
+.flex-hired {
+  display: flex;
+  padding: 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 150px;
+  justify-content: center;
+  align-content: center;
+  list-style: none;
+}
+/* On screens that are 992px wide or less, go from four columns to two columns */
+
+.squiggle {
+  max-width: 100px !important;
+  margin-bottom: 25px;
+  /* max-height: 50%; */
+}
+.christmas {
+  max-width: 85%;
+}
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .flex-hired {
+    flex-direction: column;
+  }
+  .hired-column {
+    text-align: center;
+  }
+  .landing-image {
+    max-width: 100%;
+  }
+  .christmas {
+    margin-top: 25px;
+    max-width: 100%;
+  }
+  .squiggle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .convert-form {
+    display: flex;
+    justify-content: center;
+  }
+  .formkit-field {
+    min-width: 500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .lightning {
+    margin-bottom: 25px;
+  }
+  .row {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    text-align: center !important;
+  }
+  .text-rt {
+    text-align: center;
+  }
+  .text-lt {
+    text-align: center;
+  }
+  .landing-image {
+    margin-left: 0px;
+  }
+  .flex-hired {
+    margin-top: 50px;
+  }
+  .formkit-field {
+    min-width: 200px;
+  }
 }
