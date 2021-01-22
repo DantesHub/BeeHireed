@@ -25,7 +25,7 @@ const landing = () => {
           <li className='hired-column center-col'>
             <img
               src='images/backgrounds/bg-01.png'
-              alt='job application automation'
+              alt='job application autofill'
               className='landing-image'
             />
           </li>
@@ -110,8 +110,8 @@ const landing = () => {
                   </h6>
 
                   <p className='text-gray-dark no-margin md-text-center'>
-                    With the combination of our chrome extension and job filter,
-                    get your dream job faster.
+                    With the combination of our autofiller and job filter, get
+                    your dream job faster.
                   </p>
                 </div>
               </div>
@@ -171,7 +171,7 @@ const landing = () => {
                 <div className='width-150 margin-left-auto margin-top-50px'>
                   <Image
                     src='/images/backgrounds/bg-02.png'
-                    alt=''
+                    alt='job application autofill'
                     width='350'
                     height='780'
                   />
