@@ -58,7 +58,7 @@ export default function PostList({ posts = [] }) {
           <p className='excerpt'>{post.fields.excerpt}</p>
           <p className='margin-none'>
             <Link href={"/articles/" + post.fields.slug}>
-              <a className='text-weight-600'>Continue reading »</a>
+              <a className='text-weight-600'>Continue reading » </a>
             </Link>
           </p>
         </article>
