@@ -72,15 +72,15 @@ const landing = () => {
       <div className=' bg-gray-transparent padding-top-50px padding-bottom-50px'>
         <div className='container-2 margin-top-50px'>
           <div>
-            <h1 className='text-center text-weight-700 '>
+            <h2 className='text-center text-weight-600 bee-title '>
               🐝. Search, filter and keep track of all your applications in one
               clean space.
-            </h1>
+            </h2>
             <img
               src='/images/main-features-page.png'
               className='margin-25px'
             ></img>
-            <h2 className='text-center text-weight-600 margin-top-100px '>
+            <h2 className='text-center text-weight-600 margin-top-100px bee-title  '>
               ⚡️ Finish Applying In Seconds Using Our Chrome Extension.
             </h2>
             <img
