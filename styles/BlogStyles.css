@@ -4569,7 +4569,7 @@ blockquote p {
 }
 
 .margin-25px {
-  margin: 25px;
+  margin: 25px !important;
 }
 
 .margin-30px {
@@ -4772,7 +4772,7 @@ blockquote p {
 }
 
 .margin-top-25px {
-  margin-top: 25px;
+  margin-top: 25px !important;
 }
 
 .margin-top-30px {

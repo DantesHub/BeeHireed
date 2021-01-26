@@ -69,23 +69,39 @@ const landing = () => {
         data-uk-slider-item='next'
       ></a>
       {/* Services */}
-      <div
-        id='features'
-        className='padding-top-bottom-100px bg-gray-transparent'
-      >
+      <div className=' bg-gray-transparent padding-top-50px padding-bottom-50px'>
+        <div className='container-2 margin-top-50px'>
+          <div>
+            <h1 className='text-center text-weight-700 '>
+              🐝. Search, filter and keep track of all your applications in one
+              clean space.
+            </h1>
+            <img
+              src='/images/main-features-page.png'
+              className='margin-25px'
+            ></img>
+            <h2 className='text-center text-weight-600 margin-top-100px '>
+              ⚡️ Finish Applying In Seconds Using Our Chrome Extension.
+            </h2>
+            <img
+              src='/images/auto-fill-feature.png'
+              className='margin-bottom-50px'
+            ></img>
+          </div>
+        </div>
+      </div>
+      <div id='features' className='padding-top-bottom-100px '>
         <div className='container-2'>
           <div className='row'>
             <div className='col-md-8 col-sm-12 col-xs-12 center-col text-center margin-auto'>
               <h2 className='text-weight-700 text-gray-dark'>
                 Check out the features.
               </h2>
-
               <p className='text-gray-regular text-center'>
                 With Beehired, rest assured that instead of spending hours on
                 the application process, your instead honing your skills and
                 increasing your value.
               </p>
-
               <img className='margin-auto' src='images/separator.png' alt='' />
             </div>
           </div>
