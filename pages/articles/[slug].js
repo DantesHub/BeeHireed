@@ -54,7 +54,7 @@ export default function Article({ post }) {
           {post.fields.coverImage !== undefined && (
             <Image
               src={"https:" + post.fields.coverImage.fields.file.url}
-              width={800}
+              width={900}
               height={400}
               alt={post.fields.title}
             />
