@@ -51,12 +51,15 @@ export default function Article({ post }) {
           {post.fields.title}
         </h1>
         <div>
-          <Image
-            src={"https:" + post.fields.coverImage.fields.file.url}
-            width={800}
-            height={400}
-            alt={post.fields.title}
-          />
+          {post.fields.coverImage !== undefined && (
+            <Image
+              src={"https:" + post.fields.coverImage.fields.file.url}
+              width={800}
+              height={400}
+              alt={post.fields.title}
+            />
+          )}
+
           <br />
           {documentToReactComponents(post.fields.content, {
             renderNode: {
