@@ -39,6 +39,7 @@ export default function Article({ post }) {
       <h1 className='theme-yellow text-weight-800 page-title-extra-large padding-bottom-5px text-center'>
         {post.fields.title}
       </h1>
+      <br />
       <div>
         {documentToReactComponents(post.fields.content, {
           renderNode: {
@@ -46,7 +47,7 @@ export default function Article({ post }) {
               <Image
                 src={"https:" + node.data.target.fields.file.url}
                 width={node.data.target.fields.file.details.image.width}
-                height={node.data.target.fields.file.details.image.height}  
+                height={node.data.target.fields.file.details.image.height}
               />
             ),
           },

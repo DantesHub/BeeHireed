@@ -16,7 +16,7 @@ const landing = () => {
     template: "clare",
     hideName: true,
     emailPlaceholder: "Enter an email address",
-    submitText: "Sign Up For The FREE Beta",
+    submitText: "Sign Up For Early Access",
   };
   return (
     <React.Fragment>
@@ -33,7 +33,7 @@ const landing = () => {
           <li className='overflow-hidden hired-column center-col'>
             <div className='christmas'>
               <h2 className='text-weight-700 text-gray-dark bee-title margin-none'>
-                Land Your Dream Job Faster.
+                Applying to Jobs Was Never So Easy.
               </h2>
               <p className='text-gray-regular text-extra-large'>
                 Finding a job or internship is messy, repetitive, and consumes a

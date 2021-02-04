@@ -53,14 +53,8 @@ function MyApp({ Component, pageProps }) {
         <title>Job Application Autofill</title>
       </Head>
       <Navbar />
-      <LoadingOverlay
-        active={loading}
-        spinner
-        text='Bee Right With You...'
-        className='sweet-loader'
-      >
-        <Component {...pageProps} />
-      </LoadingOverlay>{" "}
+
+      <Component {...pageProps} />
       <Footer />
     </div>
   );
