@@ -20,6 +20,20 @@ const landing = () => {
   };
   return (
     <React.Fragment>
+      <Head>
+        <meta
+          property='og:title'
+          content='Beehired: Apply to Jobs Effortlessly'
+        />
+        <meta
+          property='og:description'
+          content='Simplest Job Automation Tool'
+        />
+        <meta
+          name='description'
+          content='The simplest  job application automation tool that includes tracking jobs, lightning quick autofilling, and job searching and filtering. '
+        />
+      </Head>
       <div className=' margin-bottom-150px'>
         <ul className='flex-hired'>
           <li className='hired-column center-col'>

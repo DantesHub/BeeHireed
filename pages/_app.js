@@ -39,21 +39,13 @@ function MyApp({ Component, pageProps }) {
         `,
           }}
         />
-        <meta property='og:title' content='Beehired' />
-        <meta
-          property='og:description'
-          content='Simplest Job Automation Tool'
-        />
+        <meta name='robots' content='index,follow' />
         <meta property='og:image' content='images/backgrounds/bg-01.png' />
         <meta property='og:url' content='https://beehired.io' />
-        <meta
-          name='description'
-          content='The simplest  job application automation tool that includes tracking jobs, lightning quick autofilling, and job searching and filtering.  '
-        />
+
         <title>Job Application Autofill</title>
       </Head>
       <Navbar />
-
       <Component {...pageProps} />
       <Footer />
     </div>

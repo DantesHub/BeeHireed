@@ -15,7 +15,7 @@ export default function Navbar() {
           >
             <div className='uk-navbar-left padding-left-four-percent'>
               <Image src='/images/beeLogo.png' width='40' height='40' />
-              <Link href='/'>
+              <Link href='/' rel='canonical'>
                 <a className='text-black text-weight-700 heebo padding-left-minus-4 page-title-medium'>
                   Beehired.
                 </a>
@@ -34,7 +34,7 @@ export default function Navbar() {
                   </div>
                 </li>
                 <li>
-                  <Link className='' href='/' data-uk-scroll>
+                  <Link className='' href='/' rel='canonical' data-uk-scroll>
                     <a className='text-large uk-visible@l'>
                       <div className='text-gray-dark nav-link'>Home</div>
                     </a>
@@ -104,7 +104,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li className='uk-parent margin-bottom-10px'>
-                <Link href='/'>
+                <Link href='/' rel='canonical'>
                   <p className='text-medium text-gray-dark text-weight-500  padding-top-25px heebo text-extra-large'>
                     Home
                   </p>
