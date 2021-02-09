@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const Footer = () => {
   return (
     <div>
@@ -17,7 +17,6 @@ const Footer = () => {
                       className='facebook position-relative bottom-1 margin-right-10px'
                       data-uk-icon='icon: facebook; ratio: .7'
                     ></span>{" "}
-                    Facebook
                   </a>
                 </p>
               </li>
@@ -28,7 +27,6 @@ const Footer = () => {
                       className='instagram position-relative bottom-1 margin-right-10px'
                       data-uk-icon='icon: instagram; ratio: .7'
                     ></span>{" "}
-                    Instagram
                   </a>
                 </p>
               </li>
@@ -41,16 +39,20 @@ const Footer = () => {
             <ul className='list-unstyled no-margin'>
               <li className='no-margin'>
                 <p className='text-gray-dark'>
-                  <a className='text-gray-dark' href='#'>
-                    Home
-                  </a>
+                  <Link href='/' data-uk-scroll>
+                    <a className='text-gray-dark' href='#'>
+                      Home
+                    </a>
+                  </Link>
                 </p>
               </li>
               <li className='no-margin'>
                 <p className='text-gray-dark no-margin-bottom'>
-                  <a className='text-gray-dark' href='#'>
-                    Blog
-                  </a>
+                  <Link href='/articles' data-uk-scroll>
+                    <a className='text-gray-dark' href='#'>
+                      Blog
+                    </a>
+                  </Link>
                 </p>
               </li>
             </ul>

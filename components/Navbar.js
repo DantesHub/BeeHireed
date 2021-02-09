@@ -42,7 +42,7 @@ export default function Navbar() {
                 </li>
 
                 <li>
-                  <Link href='/blog' data-uk-scroll>
+                  <Link href='/articles' data-uk-scroll>
                     <a className='text-large uk-visible@l'>
                       <div className='text-gray-dark nav-link'>Blog</div>
                     </a>
