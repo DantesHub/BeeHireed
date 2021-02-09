@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow:
+Sitemap: https://beehired.io/sitemap.xml
